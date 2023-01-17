@@ -18,4 +18,28 @@ function slide()
 }
 setInterval("slide()",3000);
 
+var header = document.querySelector("#header");
+document.addEventListener('scroll', ()=>{
+    if (window.scrollY > 150){
+        header.style.backgroundColor="#fff";
+    }
+    else {
+        header.style.backgroundColor="transparent";
+    }
+})
 
+
+
+// MAKING THE TESTIMONIALS ACTIVE
+var review =document.querySelector('.reviews');
+testimonial = document.querySelector('.TesT p');
+anabelle = document.querySelector('.anabelle');
+milton= document.querySelector('.milton');
+review.addEventListener('click', ()=>{
+    if (review.classList.has('anabelle')){
+        testimonial.innerHtml = anabelle;
+    }
+    else if (review.classList.has('milton')) {
+        testimonial.innerHtml = milton;
+    }
+})

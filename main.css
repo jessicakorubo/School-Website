@@ -1,13 +1,37 @@
+:root {
+    --primary-cian : #64e6d2;
+    --complementary-purple : #9164e6;
+    --complementary-pink : #e66478;
+    --main-lemon: #b9e664;
+}
 * {
+    
     scroll-behavior: smooth;
 }
+body {
+    overflow-x: hidden;
+}
+#header {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border: 1px solid white;
+}
 .hero {
+    
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    overflow: visible;
 }
 .logo {
     display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--complementary-purple);
 }
 .menu ul{
     display: flex;
@@ -19,18 +43,80 @@
 .menu ul li a{
     text-decoration: none;
     padding: 0.5rem;
-    color: black;
+    font-size: large;
+    color: var(--complementary-purple);
 }
 .menu ul li a:hover {
-    border-bottom:  2px solid greenyellow;
+    border-bottom:  2px solid var(--complementary-pink);
 
 }
 #slide-container {
     display: flex;
     overflow: hidden;
-    margin-top: 3rem;
-    
+    margin-top: 7rem;
 }
+
+/* SUCCESS AD */
+.advert{
+    width: 80%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.success {
+    height: 30rem;
+    width: 25rem;
+    position: relative;
+}
+.success img{
+    height: 100%;
+    border: 10px solid white;
+    width: 100%;
+    object-fit: cover;
+}
+.success::after{
+    position: absolute;
+    content: '';
+    border: 8px solid var(--main-lemon);
+    top: 26px;
+    left: -33px;
+    height: 100%;
+    width: 98%;
+    z-index: -1;
+}
+.sucs-text {
+    display: flex;
+    border: 5px solid white;
+    position: relative;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    justify-content: center;
+    animation-name: slide;
+    animation-fill-mode:backwards;
+}
+.sucs-text h3 {
+    width: 10rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: cursive;
+    color: var(--complementary-pink);
+}
+span.withUs {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--complementary-purple);
+}
+
+/* KEYFRAMES */
+@keyframes slide {
+    0%{left: 100%; top: 0px}
+    25%{left: 100%; top:0px}
+    50%{left: -64px; top: 0px}
+    75%{left: 200px; top: 0px}
+    100%{left: 0px; top: 0px}
+}
+/* END OF KEYFRAMES */
+
 #slide-image{
     object-fit: cover;
     transition: 1s ease-in;
@@ -41,7 +127,7 @@
 }
 .backToTopBtn {
     display: flex;
-    margin-left: 85%;
+    margin-left: 75%;
     position: fixed;
 }
 .backToTopBtn a {
@@ -52,36 +138,109 @@
     width: 50px;
     font-size: 30px;
     color: black;
-    background-color: chocolate;
+    background-color: var(--complementary-pink);
     border: 1px solid black;
     border-radius:  20px 20px 0px 0px;
 }
 .AboutUs {
-    margin-top: 4rem;
+    margin-top: 6rem;
 }
-.AboutUs p{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
+
 .AboutUs h2{
     font-size: 30px;
     display: flex;
     justify-content: center;
     text-align: center;
 }
-.aboutpic {
+
+.aboutContainer {
+    padding: 2rem;
+    width: 70%;
+    margin: auto;
     display: flex;
-    justify-content: center;
+    /* background-color: var(--complementary-pink); */
+    padding: 2rem;
 }
-.aboutpic img{
-    width: 700px;
-    height: 500px;
+.aboutBlock {
+    width: 40%;
 }
-.menu ul li a {
-    color: rgb(13, 142, 142);
-    font-size:large;
+.aboutBlock p {
+    margin-bottom: 2rem;
+    color: black;
+} 
+.enrollpic img{
+    width: 250px;
+    height: 150px;
+    
 }
+a.learn {
+    text-decoration: none;
+    border: 1px solid var(--main-lemon);
+    padding: 0.6rem;
+    width: max-content;
+    color:var(--complementary-purple);
+}
+
+a.learn:hover{
+    border: 1px solid var(--complementary-purple);
+    background-color:var(--complementary-purple);
+    color: white;
+}
+.admission {
+    margin: auto;
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1;
+}
+.admissionImage img{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+.admissionText {
+    overflow: hidden;
+    padding-top: 1.5rem;
+    position: relative;
+    background-image: url(images/kyoshi-reyes-wodjj9GqzSY-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    padding-left: 3rem;
+    z-index: 1;
+}
+.admissionText .p1 {
+    color: var(--complementary-purple);
+}
+.admissionText .p2 {
+    margin-bottom: 2.5rem;
+}
+.admissionText::after{
+    overflow: hidden;
+    content: '';
+    position: absolute;
+    background-color: var(--primary-cian);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    z-index: -1;
+}
+a.apply {
+    transition: 2s color, background-color;
+    text-decoration: none;
+    border: 1px solid var(--main-lemon);
+    color: white;
+    background-color: var(--complementary-purple);
+    padding: 1rem 2rem;
+    width: fit-content;
+}
+a.apply:hover{
+    background-color: white;
+    color: var(--complementary-purple);
+}
+
 .gridKnowUs {
     margin: auto;
     justify-content: center;
@@ -92,24 +251,58 @@
 }
 .knowUs {
     margin-top: 4rem;
-    background-color: aqua;
-    color: white;
+    /* background: rgba(0,0,0,0.9); */
     padding: 1rem;
 }
 .knowUs h2 {
     display: flex;
     justify-content: center;
     font-size: 30px;
+    color: var(--complementary-pink);
 }
 .services {
-    background-image: url('images/cdc-GDokEYnOfnE-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     height: 200px;
     border:  1px solid black;
     border-radius: 10%;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     text-align: center;
     flex-direction: column;
+    position: relative;
+}
+
+.s1Curriculum {
+    background-image: url(images/curriculum.jpg);  
+}
+.s2School {
+    background-image: url(images/school.jpg); 
+}
+.s3Programs {
+    background-image: url(images/tour.jpg);
+}
+.s4Tour {
+    background-image: url(images/school_background_pic.jpg);
+}
+.s5Admissions {
+    background-image: url(images/admissions.jpg);
+}
+.s6Activities {
+    background-image: url(images/tyler-lagalo-Sfe-nQMz2h0-unsplash.jpg);
+}
+.services::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* z-index: -1; */
+    background-color: black;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
 }
 .services:hover{
     cursor: pointer;
@@ -118,17 +311,102 @@
 }
 .service-text p {
     font-size: 20px;
+    color: var(--complementary-purple);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.service-text {
+    z-index: 1;
+}
+
+.motto {
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    height: 450px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1;
+}
+.mottoImage {
+    position: relative;
+}
+.mottoImage::after {
+    position: absolute;
+    content: '';
+    top: 4rem;
+    left: 2rem;
+    height: 100%;
+    z-index: -1;
+    width: 100%;
+    /* background-color: #b9e664; */
+    background-image: linear-gradient(to right, #b9e664, #e66478,  #9164e6);
+
+}
+.mottoImage img {
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+}
+
+.mottoText h2 {
+    margin-left: 1rem;
+    color: var(--complementary-pink)
+}
+.mottoDesc {
+    width: 75%;
+    margin-left: 3rem;
+}
+.mottoDesc h3 {
+    color: var(--primary-cian);
+}
+.mottoDesc p {
+    color: var(--complementary-purple);
 }
 .pictures {
     text-align: center;
     justify-content: center;
     margin-top: 2rem;
-    display: grid;
-    grid-template-columns: 700px 700px;
+    display: flex;
+    flex-grow: inherit;
 }
 .showcase img {
-    width: 600px;
-    height: 300px;
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+}
+.testimonials h2#testTitle  {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#testimonials {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+.testimonialText {
+    margin-left: 10rem;
+    width: 400px;
+    height: 230px;
+    word-spacing: 4px;
+    overflow: hidden;
+}
+.notActive {
+    display: none;
+}
+.TesT {
+    visibility: hidden;
+}
+.reviews {
+    display: flex;
+}
+.face img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
     object-fit: cover;
 }
 .enrollbackground {
@@ -149,7 +427,7 @@
 .enroll {
     width: max-content;
     opacity: .5;
-    background-color: aliceblue;
+    background-color: var(--primary-cian);
     font-size: 17px;
     padding-top: 5rem;
     margin-left: 2rem;
@@ -173,10 +451,43 @@
 }
 .enrollbtn a:hover {
     background-color: transparent;
-    color:aqua;
-    border: 1px solid aqua;
+    color:var(--complementary-pink);
+    border: 1px solid var(--complementary-pink);
     transition: background-color 2s ;
 }
+
+.components {
+    overflow:visible;
+    display: flex;
+    justify-content: center;
+}
+.components a {
+    text-decoration: none;
+    width: max-content;
+    height: 2rem;
+    padding: 0.3rem 1rem;
+    color: white;
+
+}
+.events {
+    background-color: var(--complementary-pink);
+}
+.classrooms {
+    background-color: var(--complementary-purple);
+}
+.teachers {
+    background-color: var(--main-lemon);
+}
+.curriculum {
+    background-color: var(--primary-cian);
+}
+.prices {
+    background-color: var(--complementary-pink)
+}
+.courses {
+    background-color: var(--complementary-purple);
+}
+/* mobile styling */
 @media screen and (max-width: 750px) {
     body {
         overflow-x: hidden;

@@ -5,14 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="jquery-3.6.0.min.js">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header id ="header">
+    <div class="full-page">
+        <section id="header"></section>
         <div class="hero">
-            <div class="logo">
+            <div id="logo" class="logo">
                 <!-- <img src="images/logo.png" alt="logo"> -->
                 <p>MODEL ACADEMY</p>
+            </div>
+            <div class="hamburger">
+                <img src="images/hamburgers/Purple hamburger/icons8-menu-rounded-30.png" alt="">
             </div>
             <div class="menu">
                 <ul>
@@ -24,273 +30,330 @@
                 </ul>
             </div>
         </div>
-    </header>
-
-    <div id="slide-container">
-        <img id ="slide-image" src="images/school_background.jpg" width="100%" height="30%"alt="nothing" srcset="" name="image"/>
-    </div>
-
-    <div class="backToTopBtn">
-        <p>Back to Top</p>
-        <a href="#header"> ^ </a>
-    </div>
-
-    <div class="components">
-        <a href="" class="events">EVENTS</a>
-        <a href="" class="classrooms">CLASSROOMS</a>
-        <a href="" class="teachers">TEACHERS</a>
-        <a href="" class="curriculum">CURRICULUM</a>
-        <a href="" class="prices">PRICES</a>
-        <a href="" class="courses">COURSES</a>
-    </div>
-
-    
-
-    <div class="advert">
-        <div class="success">
-            <img src="images/success.jpg" alt="">
-        </div>
-        <div class="sucs-text">
-            <h3>Prepare to celebrate your success <span class="withUs">WITH US!</span></h4>
-        </div>
-    </div>
-
-    <div id ="AboutUs" class="AboutUs">
-        
-        <div>
-            <h2>Why you should enroll with us</h2>
-        </div>
-        <div class="aboutContainer">
-            <div class="aboutBlock">
-                <div class="enrollpic">
-                    <img src="images/children-learning.jpg" alt="" srcset="">
-                </div>
-                <h3>MAINTENANCE AND ENGINEERING</h3>
-                <p>
-                    We are known for our Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     .   
-                </p>
-                <a href="" class="learn">Learn More →</a>
+        <div class="menu-hamburger">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <hr>
+                    <li><a href="">About</a></li>
+                    <hr>
+                    <li><a href="">Contact</a></li>
+                    <hr>
+                    <li><a href="">Administrations</a></li>
+                    <hr>
+                    <li><a href="">Programs</a></li>
+                </ul>
             </div>
-            <div class="aboutBlock">
-                <div class="enrollpic">
-                    <img src="images/cdc-GDokEYnOfnE-unsplash.jpg" alt="" srcset="">
+        <div id="slide-container">
+            <img id ="slide-image" src="images/school_background.jpg" width="100%" height="30%"alt="nothing" srcset="" name="image"/>
+        </div>
+        <div class="components">
+            <a href="" class="events">EVENTS</a>
+            <a href="" class="classrooms">CLASSROOMS</a>
+            <a href="" class="teachers">TEACHERS</a>
+            <a href="" class="curriculum">CURRICULUM</a>
+            <a href="" class="prices">PRICES</a>
+            <a href="" class="courses">COURSES</a>
+        </div>
+        <div class="advert section-p1">
+            <div class="success">
+                <img src="images/success.jpg" alt="">
+            </div>
+            <div class="sucs-text">
+                <h3>Prepare to celebrate your success <span class="withUs">WITH US!</span></h4>
+            </div>
+        </div>
+        <div id ="AboutUs" class="AboutUs section-p1">
+        
+            <div>
+                <h2 class="font">WHY YOU SHOULD ENROLL WITH US</h2>
+            </div>
+            <div class="aboutContainer">
+                <div class="aboutBlock">
+                    <div class="enrollpic">
+                        <img src="images/children-learning.jpg" alt="" srcset="">
+                    </div>
+                    <h3>MAINTENANCE AND ENGINEERING</h3>
+                    <p>
+                        We are known for our Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         .
+                    </p>
+                    <a href="" class="learn">Learn More →</a>
                 </div>
-                <h3>TECHNICAL TRAINING AND ADVANCEMENT</h3>
-                <p>
-                    We are known for our Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Excepturi id adipisci exercitationem dolorum iure eaque ipsa aliquid harum quidem at?
-                     
+                <div class="aboutBlock">
+                    <div class="enrollpic">
+                        <img src="images/cdc-GDokEYnOfnE-unsplash.jpg" alt="" srcset="">
+                    </div>
+                    <h3>TECHNICAL TRAINING AND ADVANCEMENT</h3>
+                    <p>
+                        We are known for our Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Excepturi id adipisci exercitationem dolorum iure eaque ipsa aliquid harum quidem at?
+        
+                    </p>
+                    <a href="" class="learn">Learn More →</a>
+                </div>
+        
+                <div class="aboutBlock">
+                    <div class="enrollpic">
+                        <img src="images/school_background.jpg" alt="" srcset="">
+                    </div>
+                    <h3>SECURITY PRECAUTIONS TRAINING</h3>
+                    <p>
+                        We are known for our Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        
+                    </p>
+                    <a href="" class="learn">Learn More →</a>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="admission section-p1">
+            <div class="admissionImage">
+                <img src="images/santi-vedri-O5EMzfdxedg-unsplash.jpg" alt="">
+            </div>
+            <div class="admissionText">
+                <h2>NIGERIA'S BEST TECHNICAL SCHOOL</h2>
+                <p class="p1">2033 fall program coming soon!</p>
+                <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium, recusandae? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Consectetur rerum aspernatur asperiores?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Non soluta minus sunt sequi quasi voluptatibus amet inventore nam maxime fugiat.
                 </p>
-                <a href="" class="learn">Learn More →</a>
+                <a class="apply" href="">APPLY NOW</a>
+            </div>
+        </div>
+        
+        <div class="knowUs section-p1">
+            <h2>GET TO KNOW US BETTER</h2>
+            <div class="gridKnowUs">
+                <div class="services s1Curriculum ">
+                    <div class="service-text">
+                        <p>Our Curriculum</p>
+                    </div>
+                </div>
+                <div class="services s2School">_
+                    <div class="service-text">
+                        <p>Our School</p>
+                    </div>
+                </div>
+                <div class="services s3Programs">
+                    <div class="service-text">
+                        <p>Our Programs</p>
+                    </div>
+                </div>
+                <div class="services s4Tour">
+                    <div class="service-text">
+                        <p>Take a virtual tour</p>
+                    </div>
+                </div>
+                <div class="services s5Admissions">
+                    <div class="service-text">
+                        <p>Admissions</p>
+                    </div>
+                </div>
+                <div class="services s6Activities">
+                    <div class="service-text">
+                        <p>Activities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="motto section-p1">
+            <div class="mottoImage">
+                <img src="images/mottoPic.jpg" alt="">
+            </div>
+            <div class="mottoText">
+                <h2>OUR MOTTO, MISSION AND VALUES</h2>
+                <div class="mottoDesc">
+                    <h3>Our Motto</h3>
+                    <p>We believe in equality and productablity.
+                        We all have the capacity to BE better, DO better and THINK better.
+                    </p>
+                    <h3>Our Mission</h3>
+                    <p>Our mission is to provide quality and quantity education for all our students,
+                        to also give them a chance if discovering their hidden talents and to help them
+                        grow and nurture it into life changing skills.
+                    </p>
+                    <h3>Our Values</h3>
+                    <p>We believe in integrity, honesty, humility and self confidence. We want
+                        our students to stand out from the crowd and to soar when finally they have achieved their
+                        purpose of being with us.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h2 id="testTitle" style="text-align: center; margin-bottom: 32px;">WHAT OTHERS SAY ABOUT US</h2>
+        <div class="testimonials section-p1">
+                <i class="fa-solid fa-chevron-left fa-2xl left arrow"></i>
+            
+            <div id="testimonials">
+                <div class="quotes">
+                    <div class="reviews anabelle">
+                        <img class="quoteImage" src="images/icons8-quote-left-50.png" alt="">
+                        <p>Beautiful school with a wonderful curriculum.
+                            I sincerely recommend.
+                        </p>
+                        <div class="identity">
+                            <div class="face">
+                                <img src="images/womanface1.jpg" alt="">
+                            </div>
+                            <div id="role">
+                                <h3>Annabelle Nnaji</h3>
+                                <p>Teacher</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="reviews milton">
+                         <img class="quoteImage" src="images/icons8-quote-left-50.png" alt="">
+                        <p>Time and time again, my children have come home, excited to show
+                            me every new skill they learnt. I recommend this school for
+                            anyone who is interested in building their child's technical
+                            career.
+                        <div class="identity">
+                            <div>
+                                <h2>Moses Anefiok</h2>
+                                <p>Parent</p>
+                            </div>
+                            <div class="face">
+                                <img src="images/manface.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                   <div class="reviews Lawal">
+                        <img class="quoteImage" src="images/icons8-quote-left-50.png" alt="">
+                        <p>
+                            We love to see our students progress and this school has
+                            made that very possible; the students are happy and are always excited
+                            to learn, because of the effort the teachers put in to keep their
+                            spirits eager.
+                        </p>
+                        <div class="identity">
+                            <div>
+                                <h2>Tayo Lawal</h2>
+                                <p>Teacher</p>
+                            </div>
+                            <div class="face">
+                                <img src="images/manface2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews ekene">
+                        <img class="quoteImage" src="images/icons8-quote-left-50.png" alt="">
+                        <p>
+                            I recommend Model College for anyone at all interested in technical schooling.
+                            My school is the premium package for anyone and everyone. I love my teachers
+                            and I appreciate the effort they put into helping me get better everyday.
+                        </p>
+                        <div class="identity">
+                            <div>
+                                <h2>Ekene Okoye</h2>
+                                <p>Student</p>
+                            </div>
+                            <div class="face">
+                                <img src="images/boyface1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             
-            <div class="aboutBlock">
-                <div class="enrollpic">
-                    <img src="images/school_background.jpg" alt="" srcset="">
-                </div>
-                <h3>SECURITY PRECAUTIONS TRAINING</h3>
-                <p>
-                    We are known for our Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     
-                </p>
-                <a href="" class="learn">Learn More →</a>
-            </div>
+           
         </div>
+        <i class="fa-solid fa-chevron-right fa-2xl right arrow"></i>
         
-    </div>
-
-    <div class="admission">
-        <div class="admissionImage">
-            <img src="images/santi-vedri-O5EMzfdxedg-unsplash.jpg" alt="">
-        </div>
-        <div class="admissionText">
-            <h2>APPLY FOR ADMISSION</h2>
-            <p class="p1">2033 fall program coming soon!</p>
-            <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Laudantium, recusandae? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Consectetur rerum aspernatur asperiores?
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Non soluta minus sunt sequi quasi voluptatibus amet inventore nam maxime fugiat.
-            </p>
-            <a class="apply" href="">APPLY NOW</a>
-        </div>
-    </div>
-    
-    <div class="knowUs">
-        <h2>Get to Know us better</h2>
-        <div class="gridKnowUs">
-            <div class="services s1Curriculum ">
-                <div class="service-text">
-                    <p>Our Curriculum</p>
-                </div>
+        <div class="enrollbackground">
+            <div class="enrollHeading">
+                <h2>ENROLL TODAY</h2>
             </div>
-            <div class="services s2School">_
-                <div class="service-text">
-                    <p>Our School</p>
-                </div>
-            </div>
-            <div class="services s3Programs">
-                <div class="service-text">
-                    <p>Our Programs</p>
-                </div>
-            </div>
-            <div class="services s4Tour">
-                <div class="service-text">
-                    <p>Take a virtual tour</p>
-                </div>
-            </div>
-            <div class="services s5Admissions">
-                <div class="service-text">
-                    <p>Admissions</p>
-                </div>
-            </div>
-            <div class="services s6Activities">
-                <div class="service-text">
-                    <p>Activities</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="motto">
-        <div class="mottoImage">
-            <img src="images/mottoPic.jpg" alt="">
-        </div>
-        <div class="mottoText">
-            <h2>OUR MOTTO, MISSION AND VALUES</h2>
-
-            <div class="mottoDesc">
-                <h3>Our Motto</h3>
-                <p>We believe in equality and productablity. 
-                    We all have the capacity to BE better, DO better and THINK better.
+            <div>
+                <p class="enroll" >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga architecto,
+                    magnam quos neque asperiores labore magni amet officia doloribus?
+                    Rem doloremque modi non cum officiis. Laborum error assumenda quasi placeat quia.
+                    Explicabo modi eius sunt hic neque iusto sapiente, sit nostrum beatae,
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Rerum, beatae. Minima eum facere delectus corporis,
+                    veniam excepturi dolor voluptates libero veritatis,
+                    optio quibusdam doloribus repellendus aliquid voluptas
+                    natus dicta fugiat sint voluptatibus numquam qui dolorum!
+                     Consequatur obcaecati quas perferendis tempora.
+                    libero culpa odio quam voluptate consequuntur corporis reiciendis.
                 </p>
-                <h3>Our Mission</h3>
-                <p>Our mission is to provide quality and quantity education for all our students,
-                    to also give them a chance if discovering their hidden talents and to help them
-                    grow and nurture it into life changing skills.
-                </p>
-                <h3>Our Values</h3>
-                <p>We believe in integrity, honesty, humility and self confidence. We want 
-                    our students to stand out from the crowd and to soar when finally they have achieved their
-                    purpose of being with us.
-                </p>
+                <div class="enrollbtn"><a href="">Enroll Now</a></div>
             </div>
-        </div>
-    </div>
-
-
-    <div class="testimonials">
-        <h2 id="testTitle">TESTIMONIALS</h2>
-        <div id="testimonials">
-            <div class="quotes">
-                <div class="reviews anabelle">
-                    <div class="face">
-                        <img src="images/testimonial.jpg" alt="">
+            <div class="footer">
+                <div class="moreInfo">
+                    <div class="schoolHours">
+                        <h2>OPEN FROM</h2>
+                        <p>Mondays - Fridays</p>
+                        <p>7:00 am - 3:00 pm</p>
                     </div>
-                    <div class="identity">
-                        <h2>Annabelle Nnaji</h2>
-                        <p>Teacher</p>
+                    <div class="emailInfo">
+                        <h2>EMAIL & NUMBER</h2>
+                        <p>modelInternational@info.com</p>
+                        <p>+234 794 383 23</p>
                     </div>
-                </div>
-                <div class="reviews milton">
-                    <div class="face">
-                        <img src="images/testimonial.jpg" alt="">
+                    <div class="address">
+                        <h2>ADDRESS</h2>
+                        <p>
+                            No 7, Sonni Abacha Street, Off Sesame Garden,
+                            Town hall Road, Princeville, Port-harcourt, Rivers State,
+                            Nigeria.
+                        </p>
                     </div>
-                    <div class="identity">
-                        <h2>Milton Raymond</h2>
-                        <p>Teacher</p>
-                    </div>
-                </div>
-                <div class="reviews">
-                    <div class="face">
-                        <img src="images/testimonial.jpg" alt="">
-                    </div>
-                    <div class="identity">
-                        <h2>Milton Annabelle</h2>
-                        <p>Teacher</p>
-                    </div>
-                </div>
-                <div class="reviews">
-                    <div class="face">
-                        <img src="images/testimonial.jpg" alt="">
-                    </div>
-                    <div class="identity">
-                        <h2>Milton Annabelle</h2>
-                        <p>Teacher</p>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonialText">
-                <div class="milton TesT ">
-                    <p>We love to see our students progress and this school has 
-                        made that very possible; the students are happy and are alwats excited
-                        to learn, because of the effort the teachers put in to keep their
-                        spirits eager.
-                        Time and time again, my children have come home, excited to show
-                        me every new skill they learnt. I recommend this school for 
-                        anyone who is interested in building their child's technical
-                        career. You will not regret it.
-                    </p>
-                </div>
-                <div class="Happiness TesT">
-                    <p>Time and time again, my children have come home, excited to show
-                        me every new skill they learnt. I recommend this school for 
-                        anyone who is interested in building their child's technical
-                        career. You will not regret it.
-                        You know school is fun when your children love to go.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="pictures">
         
-            <div class="showcase">
-                <img src="images/agence-olloweb-Z2ImfOCafFk-unsplash.jpg" alt="" srcset="">
-            </div>
-            <div class="showcase">
-                <img src="images/birmingham-museums-trust-KfRUve5NtO8-unsplash.jpg" alt="" srcset="">
-            </div>
-            <div class="showcase">
-                <img src="images/cdc-GDokEYnOfnE-unsplash.jpg" alt="" srcset="">
-            </div>
-            <div class="showcase">
-                <img src="images/zach-vessels-jLbmY5Zp7UQ-unsplash.jpg" alt="" srcset="">
-            </div>
-            <div class="showcase">
-                <img src="images/tyler-lagalo-Sfe-nQMz2h0-unsplash.jpg" alt="" srcset="">
-            </div>
-            <div class="showcase">
-                <img src="images/santi-vedri-O5EMzfdxedg-unsplash.jpg" alt="" srcset="">
+                    <div class="subscribe">
+                        <h2>NEWSLETTER</h2>
+                        <input type="email" name="" id="" placeholder="Email:">
+                        <div>
+                            <button type="submit">Subscribe</button>
+                        </div>
+        
+                    </div>
+                </div>
+                <div class="quickLinks">
+        
+                    <div class="footerPics">
+                        <div class="footerImage">
+                            <img src="images/jeff-sheldon-8z2Q6XWLYa4-unsplash.jpg.crdownload" alt="">
+                        </div>
+                    </div>
+        
+                    <div class="footerMenu">
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Mission</a>
+                    </div>
+        
+                    <div class="footerInfo">
+                        <a href="#">Location</a>
+                        <a href="#">Student Life</a>
+                        <a href="#">Admission</a>
+                    </div>
+        
+                    <div class="moreFooterInfo">
+                        <a href="#">FAQ'S</a>
+                        <a href="#">Privacy Policy</a>
+                        <div class="socials">
+                            <a href=""><img src="images/twitter.png" alt=""></a>
+                            <a href=""><img src="images/instagram.png" alt=""></a>
+                            <a href=""><img src="images/linkedin.png" alt=""></a>
+                        </div>
+                    </div>
+        
+                </div>
+        
+        
             </div>
         </div>
     </div>
-    
-    <div class="enrollbackground">
-        <div class="enrollHeading">
-            <h2>ENROLL TODAY</h2>
-        </div>
-        <div>
-            <pre class="enroll" >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga architecto, 
-                magnam quos neque asperiores labore magni amet officia doloribus? 
 
-                Rem doloremque modi non cum officiis. Laborum error assumenda quasi placeat quia. 
-                Explicabo modi eius sunt hic neque iusto sapiente, sit nostrum beatae,
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
-                 Rerum, beatae. Minima eum facere delectus corporis,
-                veniam excepturi dolor voluptates libero veritatis, 
-                optio quibusdam doloribus repellendus aliquid voluptas
-                natus dicta fugiat sint voluptatibus numquam qui dolorum!
-
-                 Consequatur obcaecati quas perferendis tempora. 
-                libero culpa odio quam voluptate consequuntur corporis reiciendis.
-            </pre>
-
-            <div class="enrollbtn"><a href="">Enroll Now</a></div>
-        </div>
-    </div>
     <script src="main.js"></script>
 </body>
 </html>
+
+<!-- 
+                         You will not regret it. -->
